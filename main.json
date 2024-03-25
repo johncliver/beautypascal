@@ -1,0 +1,216 @@
+{
+    "//": [
+        {
+            "img": "",
+            "title": "",
+            "eau": "",
+            "price": 0.0,
+            "info": {
+                "DesignHouse": "",
+                "FragranceNotes": "",
+                "YearIntroduced": "",
+                "RecommendedUse": ""
+            },
+            "description": "",
+            "type": "",
+            "sexo": ""
+        }
+    ],
+    "main": [
+        {
+            "img": "https://cdn.fragrancenet.com/images/photos/900x900/139842.jpg",
+            "title": "Calvin Klein Euphoria",
+            "eau": "Eau De Parfum Spray 3.3 oz",
+            "price": 68.99,
+            "info": {
+                "DesignHouse": "Calvin Klein",
+                "FragranceNotes": "Pomegranate, Orchid, Lotus, Violet, Amber, Musk, Mahogany",
+                "YearIntroduced": "2009",
+                "RecommendedUse": "romantic"
+            },
+            "description": "A 2005 Calvin Klein creation, Euphoria eau de parfum for women is an exhilarating fragrance with the power of a spell. The tangy pomegranate opening and the sweet, powdery notes of orchid, violet and lotus descend into the rich, deep aromas of amber. Euphoria is as intoxicating as it promises, offering a luxurious and exotic scent with a dark, mysterious side, well-suited to warm up your winters and color your nights in mysterious tones.",
+            "type": "fragance",
+            "sexo": "w"
+        },
+        {
+            "img": "https://cdn.fragrancenet.com/images/photos/900x900/153501.jpg",
+            "title": "D & G Light Blue",
+            "eau": "Eau De Toilette Spray 4.2 oz",
+            "price": 79.99,
+            "info": {
+                "DesignHouse": "Dolce & Gabbana",
+                "FragranceNotes": "Bergamot, Grapefruit, Juniper, Sicilian Mandarin, Pepper, Brazilian Rosewood, Rosemary, Incence, Oakmoss, Musk",
+                "YearIntroduced": "2007",
+                "RecommendedUse": "casual"
+            },
+            "description": "Dolce & Gabbana's Light Blue eau de toilette spray is a considered choice for the lively, self-assured man who favors a modern, vibrant scent. Launched in 2007, this masculine fragrance boasts a robust, zesty bouquet. Citrus notes of Sicilian mandarin, frozen grapefruit peel and bergamot interplay with luscious juniper and herbal rosemary notes to deliver a fresh aroma that lasts throughout the day. Ideal for casual wear, this spray-on scent is ideal for wear before a soccer game with friends at the park or a Friday night out on the town.",
+            "type": "fragance",
+            "sexo": "m"
+        },
+        {
+            "img": "https://cdn.fragrancenet.com/images/photos/900x900/364831.jpg",
+            "title": "Dolce Garden",
+            "eau": "Eau De Parfum Spray Vial 0.05 oz",
+            "price": 3.29,
+            "info": {
+                "DesignHouse": "Dolce & Gabbana",
+                "FragranceNotes": "Magnolia, Coconut, Sandalwood, Vanilla Absolute, Frangipani",
+                "YearIntroduced": "2018",
+                "RecommendedUse": ""
+            },
+            "description": "The floral fruity fragrance of Dolce Garden is an inspiring scent for women. Launched in 2018, this scent comes from the design house of Dolce & Gabbana. The exciting scent opens at the top with fresh notes from Neroli, Mandarin Orange and Magnolia. The heart is fascinating with notes from Frangipani, Ylang-Ylang and Coconut. The fragrance comes to a close with enthralling hints from Sandalwood, Almond Milk and Vanilla Absolute.",
+            "type": "fragance",
+            "sexo": "w"
+        },
+        {
+            "img": "https://cdn.fragrancenet.com/images/photos/900x900/200653.jpg",
+            "title": "Paco Rabanne 1 Million",
+            "eau": "Eau De Toilette Spray 6.8 oz",
+            "price": 139.99,
+            "info": {
+                "DesignHouse": "Paco Rabanne",
+                "FragranceNotes": "Blood Mandarin, Mint, Grapefruit, Spicy Notes, Cinnamon, Rose, Indian Patchouli, Amber, Woody Notes, Leather",
+                "YearIntroduced": "2008",
+                "RecommendedUse": "casual"
+            },
+            "description": "Make the most of each day wearing this decadent men's fragrance. Launched in 2008 by the Paco Rabanne design house, One Million showcases lush, sun-drenched notes of orange and grapefruit with tingling hints of mint and a sweet, subtle touch of roses. A spicy cinnamon heart warms this fragrance, giving you masculine elegance in a complex, intriguing scent. Spray on a dash of this eau de toilette before a special evening or a luxurious brunch to add the perfect finishing touch to your every experience.",
+            "type": "fragance",
+            "sexo": "m"
+        },
+        {
+            "img": "https://cdn.fragrancenet.com/images/photos/900x900/321906.jpg",
+            "title": "Juicy Couture Oui",
+            "eau": "Eau De Parfum Spray 3.4 oz",
+            "price": 67.99,
+            "info": {
+                "DesignHouse": "Juicy Couture",
+                "FragranceNotes": "Pear, Tea, Acai Berry, Jasmine, Amber",
+                "YearIntroduced": "2018",
+                "RecommendedUse": ""
+            },
+            "description": "The floral fruity fragrance of Juicy Couture Oui is a delectable scent for women. Launched in 2018, this scent opens with top notes from Acai Berry, Tea, Pear and Watermelon. The heart bursts with freshness from Jasmine, Tuberose and Honeysuckle. The base is absorbing with hints from Amber, Woodsy notes and Musk.",
+            "type": "fragance",
+            "sexo": "w"
+        },
+        {
+            "img": "https://cdn.fragrancenet.com/images/photos/900x900/164023.jpg",
+            "title": "Viva La Juicy",
+            "eau": "Eau De Parfum Spray 3.4 oz",
+            "price": 67.99,
+            "info": {
+                "DesignHouse": "Juicy Couture",
+                "FragranceNotes": "honeysuckle, vanilla, caramel, amber, sandalwood, mandarin orange",
+                "YearIntroduced": "2008",
+                "RecommendedUse": "casual"
+            },
+            "description": "Well-rounded and rich, Viva la Juicy for women is a celebration of fruity scents pinpointed by sweet floral and delicious gourmand aromas. Rather than coming across as simple in its fruity consistency, the scent is lush with juiciness and warmth. Opening on wild berries and mandarin orange notes, the fragrance continues on sweet honeysuckle and jasmine tones, with creamy caramel hints sealing its intoxicating appeal. Launched in 2008 by Juicy Couture, Viva la Juicy is a feminine scent that teases and captivates the senses.",
+            "type": "fragance",
+            "sexo": "w"
+        },
+        {
+            "img": "https://cdn.fragrancenet.com/images/photos/900x900/324272.jpg",
+            "title": "Mont Blanc Explorer",
+            "eau": "Eau De Parfum Spray 3.3 oz",
+            "price": 73.99,
+            "info": {
+                "DesignHouse": "Mont Blanc",
+                "FragranceNotes": "Pink Pepper, Clary Sage, Leather, Haitian Vetiver, Cacao Pod",
+                "YearIntroduced": "2019",
+                "RecommendedUse": ""
+            },
+            "description": "Explorer is a signature fragrance for men that rejoices challenges and excellence. Launched in 2019, this fragrance comes from the design house of MontBlanc. At the top of this valorous fragrance are crisp notes of Bergamot, Clary Sage and Pink Pepper. The heart is unique with notes of Vetiver and Leather. The base is a combination of notes from Akigalawood, Cacao Pod and Indonesian Patchouli Leaf.",
+            "type": "fragance",
+            "sexo": "m"
+        },
+        {
+            "img": "https://cdn.fragrancenet.com/images/photos/900x900/126343.jpg",
+            "title": "Acqua di Gio Giorgio Armani",
+            "eau": "Eau De Toilette Spray 3.4 oz",
+            "price": 96.99,
+            "info": {
+                "DesignHouse": "Giorgio Armani",
+                "FragranceNotes": "freesia, cyclamen, hiacynth, peach, calone, rosemary",
+                "YearIntroduced": "1996",
+                "RecommendedUse": "casual"
+            },
+            "description": "Bask in the masculine signature scent from the Giorgio Armani design house when adding Acqua di Gio for men to your daily hygiene routine. Launched in 1996, this designer scent lasts the test of time, with light and watery marine notes combined with citrus accords of orange and lime for a fresh addition to your day. Formulated specifically for men, the heart of this enticing aroma exudes a spicy blend of nutmeg and bergamot with cedar rounding out the base notes for a woodsy finish.",
+            "type": "fragance",
+            "sexo": "m"
+        },
+        {
+            "img": "https://cdn.fragrancenet.com/images/photos/900x900/232011.jpg",
+            "title": "Versace Eros",
+            "eau": "Eau De Toilette Spray 3.4 oz",
+            "price": 105.99,
+            "info": {
+                "DesignHouse": "Gianni Versace",
+                "FragranceNotes": "Tonka bean, geranium, atlas cedar, vetiver, oakmoss",
+                "YearIntroduced": "2012",
+                "RecommendedUse": ""
+            },
+            "description": "Master your world and achieve your goals when you wear Eros by Versace. Introduced in 2012, this eau de toilette for men combines green apple, Italian lemon and mint for a sensation of fresh air and vitality. In the heart of this fragrance, tonka beans embrace you with their warmth, while flower notes such as geranium keep you cool and smooth with their fougere bouquet. Whatever you are fighting for in life, the scent of Eros inspires your confidence to win the day or night.",
+            "type": "fragance",
+            "sexo": "m"
+        },
+        {
+            "img": "https://cdn.fragrancenet.com/images/photos/900x900/291563.jpg",
+            "title": "Versace Dylan Blue",
+            "eau": "Eau De Toilette Spray 3.4 oz",
+            "price": 89.99,
+            "info": {
+                "DesignHouse": "Gianni Versace",
+                "FragranceNotes": "Calabrian bergamot , Grapefruit , Fig leaf , Violet leaf , Papyrus",
+                "YearIntroduced": "2016",
+                "RecommendedUse": ""
+            },
+            "description": "The Versace Dylan Blue Eau De Toilette lets you experience a whiff of cool Mediterranean breeze for masculine freshness that will linger on. Combining the vivacity of Calabrian Bergamot, Grapefruit, Aquatic Notes, and Fig leaves at the top with the subtlety of Violet leaves, Ambrox, Pepper, and Patchouli at the heart, Dylan Blue is what any man with a zest for life will love to own. The long-lasting base is accented by a seductive composition of Tonka Beans, Mineral Musk, and Saffron, reflecting his undying spirit.",
+            "type": "fragance",
+            "sexo": "m"
+        },
+        {
+            "img": "https://cdn.fragrancenet.com/images/photos/900x900/303895.jpg",
+            "title": "Armaf Club De Nuit Intense",
+            "eau": "Eau De Toilette Spray 3.6 oz",
+            "price": 40.99,
+            "info": {
+                "DesignHouse": "Armaf",
+                "FragranceNotes": "Bergamot, Apple, Pineapple, Lemon, Rose",
+                "YearIntroduced": "2015",
+                "RecommendedUse": ""
+            },
+            "description": "The woody spicy fragrance of Club de Nuit Intense is a powerful scent for men. Launched by the design house of Armaf, this 2015 scent features notes from Pineapple, Bergamot, Lemon, Apple and Black Currant. The heart is uplifting with hints from Jasmine, Rose and Birch. The base is intense with powerful notes of Vanilla, Patchouli, Ambergris and Musk.",
+            "type": "fragance",
+            "sexo": "m"
+        },
+        {
+            "img": "https://cdn.fragrancenet.com/images/photos/900x900/120682.jpg",
+            "title": "D & G Light Blue",
+            "eau": "Eau De Toilette Spray 3.3 oz",
+            "price": 80.99,
+            "info": {
+                "DesignHouse": "Dolce & Gabbana",
+                "FragranceNotes": "Sicilian Lemon, Bellflower, Cedar, Apple, Jasmine, Bamboo, White Rose, Cedar, Amber, Musk",
+                "YearIntroduced": "2001",
+                "RecommendedUse": "casual"
+            },
+            "description": "Frolic in the essence of springtime when you wear this Light Blue eau de toilette spray for women. Released in 2001 by Dolce & Gabbana, this scintillating scent takes you on an olfactory sojourn with fruity hints of apple and Sicilian lemon that collide with fragrant cedar and romantic white rose and bellflower to leave you feeling beautiful and feminine. This scent is light enough for everyday wear yet memorable enough to save for date night and other special occasions.",
+            "type": "fragance",
+            "sexo": "w"
+        },
+        {
+            "img": "https://cdn.fragrancenet.com/images/photos/900x900/115760.jpg",
+            "title": "CK One Cologne",
+            "eau": "Eau De Toilette Spray 6.7 oz",
+            "price": 55.99,
+            "info": {
+                "DesignHouse": "Calvin Klein",
+                "FragranceNotes": "Bergamot, Papaya, Lemon, Mandarin Orange, Cardamom, Green Notes, Pineapple, Lily of the Valley, Jasmine, Orris Root, Rose, Violet, Nutmeg, Oakmoss, Cedar, Musk, Amber, Sandalwood",
+                "YearIntroduced": "1994",
+                "RecommendedUse": "daytime"
+            },
+            "description": "Reminiscent of the perfect summer day spent on the beach, CK One eau de toilette by Calvin Klein was introduced in 1994, designed as a unisex fragrance. Imagine the sun on your face from the first spritz, where juicy pineapple and sweet mandarin orange notes take hold. Feel the warmth of the sand between your toes as heart notes of intense nutmeg envelop you, and let your worries float away in the cool night ocean air as earthy notes of sandalwood and amber surround you.",
+            "type": "fragance",
+            "sexo": "u"
+        }
+    ]
+}
