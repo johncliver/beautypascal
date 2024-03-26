@@ -1,21 +1,4 @@
 {
-    "//": [
-        {
-            "img": "",
-            "title": "",
-            "eau": "",
-            "price": 0.0,
-            "info": {
-                "DesignHouse": "",
-                "FragranceNotes": "",
-                "YearIntroduced": "",
-                "RecommendedUse": ""
-            },
-            "description": "",
-            "type": "",
-            "sexo": ""
-        }
-    ],
     "main": [
         {
             "img": "https://cdn.fragrancenet.com/images/photos/900x900/139842.jpg",
