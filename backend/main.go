@@ -1,21 +1,18 @@
 package main
 
 import (
-	"encoding/json"
-	"fmt"
 	"net/http"
 
-	"github.com/gorilla/mux"
-	"github.com/rs/cors"
+	"github.com/gin-gonic/gin"
 )
 
 type User struct {
-	ID               int               `json:"id"`
-	ShoppingBags     []ShoppingBag     `json:"shoppingbag"`
-	ShippingAddressS []ShippingAddress `json:"shippingaddress"`
-	ShippingMethods  string            `json:"shippingmethod"`
-	Currencies       string            `json:"currency"`
-	Card             []CredictCard     `json:"card"`
+	ID                int               `json:"id"`
+	ShoppingBags      []ShoppingBag     `json:"shoppingbag"`
+	ShippingAddresses []ShippingAddress `json:"shippingaddress"`
+	ShippingMethod    string            `json:"shippingmethod"`
+	Currency          string            `json:"currency"`
+	Cards             []CreditCard      `json:"card"`
 }
 
 type ShoppingBag struct {
@@ -39,10 +36,10 @@ type ShippingAddress struct {
 	Mobile       string `json:"mobile"`
 }
 
-type CredictCard struct {
-	Credict string `json:"credict"`
-	Date    string `json:"date"`
-	Cvv     string `json:"cvv"`
+type CreditCard struct {
+	Credit string `json:"credict"`
+	Date   string `json:"date"`
+	Cvv    string `json:"cvv"`
 }
 
 type ListUser struct {
@@ -53,65 +50,46 @@ var users = ListUser{
 	Users: []User{},
 }
 
-func getUsers(w http.ResponseWriter, r *http.Request) {
-	w.Header().Set("Content-Type", "application/json")
-	json.NewEncoder(w).Encode(users)
+func getUsers(c *gin.Context) {
+	c.JSON(http.StatusOK, users)
 }
 
-func createUser(w http.ResponseWriter, r *http.Request) {
+func createUser(c *gin.Context) {
 	var newUser User
 
-	// Log para depuración
-	fmt.Println("Received POST request to /users")
-
-	// Decodifica el cuerpo JSON de la solicitud y almacena los datos en newUser
-	err := json.NewDecoder(r.Body).Decode(&newUser)
-	if err != nil {
-		// Log para depuración
-		fmt.Println("Error decoding JSON:", err)
-		http.Error(w, "Invalid JSON data", http.StatusBadRequest)
+	// Bind JSON body to User struct
+	if err := c.ShouldBindJSON(&newUser); err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
 		return
 	}
 
-	// Realiza validaciones adicionales si es necesario
-
-	// Asigna un nuevo ID al usuario
+	// Assign a new ID to the user
 	newUser.ID = len(users.Users) + 1
 
-	// Agrega el nuevo usuario a la lista
+	// Add the new user to the list
 	users.Users = append(users.Users, newUser)
 
-	// Devuelve el nuevo usuario como respuesta
-	w.Header().Set("Content-Type", "application/json")
-	json.NewEncoder(w).Encode(newUser)
-}
-
-func optionsHandler(w http.ResponseWriter, r *http.Request) {
-	// Manejar solicitudes OPTIONS para el preflight CORS
-	w.Header().Set("Access-Control-Allow-Methods", "GET, POST, OPTIONS")
-	w.Header().Set("Access-Control-Allow-Headers", "Content-Type")
-	w.WriteHeader(http.StatusOK)
+	// Return the new user as response
+	c.JSON(http.StatusCreated, newUser)
 }
 
 func main() {
-	router := mux.NewRouter()
+	router := gin.Default()
 
-	router.HandleFunc("/users", getUsers).Methods("GET")
-	router.HandleFunc("/users", createUser).Methods("POST")
-	router.HandleFunc("/users", optionsHandler).Methods("OPTIONS") // Manejar OPTIONS para CORS
-
-	// Crea un nuevo manejador CORS y úsalo para envolver el enrutador
-	c := cors.New(cors.Options{
-		AllowedOrigins:   []string{"*"}, // Actualiza según tus necesidades
-		AllowedMethods:   []string{"GET", "POST", "OPTIONS"},
-		AllowedHeaders:   []string{"Content-Type", "application/json"},
-		AllowCredentials: true,
-		Debug:            true,
+	// CORS middleware
+	router.Use(func(c *gin.Context) {
+		c.Writer.Header().Set("Access-Control-Allow-Origin", "*")
+		c.Writer.Header().Set("Access-Control-Allow-Methods", "GET, POST, OPTIONS")
+		c.Writer.Header().Set("Access-Control-Allow-Headers", "Content-Type")
+		if c.Request.Method == "OPTIONS" {
+			c.AbortWithStatus(http.StatusOK)
+			return
+		}
+		c.Next()
 	})
 
-	// Usa el manejador CORS envuelto en el enrutador
-	handler := c.Handler(router)
+	router.GET("/users", getUsers)
+	router.POST("/users", createUser)
 
-	fmt.Printf("Listen And Server and Port: 8080")
-	http.ListenAndServe(":5000", handler)
+	router.Run(":8080")
 }
