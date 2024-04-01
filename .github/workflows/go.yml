@@ -5,28 +5,27 @@ name: Go
 
 on:
   push:
-    branches: [ main ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ main ]
+    branches: [ "main" ]
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
 
+  build:
+    runs-on: windows/amd64
     steps:
-    - name: Checkout
-      uses: actions/checkout@v2
-      
-    - name: Setup
-      uses: actions/setup-go@v2
+    - uses: actions/checkout@v3
+
+    - name: Set up Go
+      uses: actions/setup-go@v4
       with:
-        go-version: 1.17
+        go-version: '1.22.0'
 
     - name: Build
-      run: go build
+      run: go build ./backend
+
+    - name: Test
+      run: go help
 
     - name: Run
-      run: |
-        cd backend
-        go run main.go
-        nohup ./backend &
+      run: go run ./backend/main.go
